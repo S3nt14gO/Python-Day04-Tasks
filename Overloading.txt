@@ -1,0 +1,29 @@
+python support overloading method?
+
+no python does not support overloading
+
+The problem with method overloading in Python is that we
+may overload the methods but can only use the latest defined method.
+
+
+for exapmle
+####
+def product(a, b):
+    p = a * b
+    print(p)
+
+def product(a, b, c):
+    p = a * b*c
+    print(p)
+
+product(4, 5, 5)
+
+###
+the output will be 100
+
+1st function will be overidded by the 2nd function
+
+####
+Source
+
+https://www.geeksforgeeks.org/python-method-overloading/

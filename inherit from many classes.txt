@@ -1,0 +1,32 @@
+can a class inherit from multiple classes python
+
+yes python allow inheritance from many classes
+
+as Example
+#####
+class Mammal:
+    def mammal_info(self):
+        print("Mammals can give direct birth.")
+
+class WingedAnimal:
+    def winged_animal_info(self):
+        print("Winged animals can flap.")
+
+class Bat(Mammal, WingedAnimal):
+    pass
+
+# create an object of Bat class
+b1 = Bat()
+
+b1.mammal_info()
+b1.winged_animal_info()
+####
+then the output must be
+###
+Mammals can give direct birth.
+Winged animals can flap.
+
+
+
+source
+https://www.programiz.com/python-programming/multiple-inheritance#:~:text=A%20class%20can%20be%20derived,This%20is%20called%20multiple%20inheritance.
